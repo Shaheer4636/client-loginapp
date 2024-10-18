@@ -20,6 +20,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
         }
 
         .login-box h2 {
@@ -52,6 +53,7 @@
         .message {
             text-align: center;
             margin-top: 15px;
+            color: green;
         }
     </style>
 </head>
@@ -75,11 +77,8 @@
 <script>
     document.getElementById('loginForm').addEventListener('submit', function(event) {
         event.preventDefault();
-        // Simulate successful login
-        document.getElementById('message').textContent = 'Login successful! Redirecting to dashboard...';
-        setTimeout(function() {
-            window.location.href = '/dashboard.html';  // You can redirect to another page
-        }, 2000);  // Redirect after 2 seconds
+        // Display success message after form submission
+        document.getElementById('message').textContent = 'Successful login!';
     });
 </script>
 
